@@ -42,7 +42,13 @@ SRC = ft_bzero.c\
 	ft_lstdelone.c\
 	ft_lstclear.c\
 	ft_lstiter.c\
-	ft_lstmap.c
+	ft_lstmap.c\
+	\
+	ft_printf/print_args/print_char.c\
+	ft_printf/print_args/print_hex.c\
+	ft_printf/print_args/print_num.c\
+	ft_printf/print_args/print_str.c\
+	ft_printf/ft_printf.c\
 
 OBJ = $(SRC:.c=.o)
 
