@@ -6,7 +6,7 @@
 /*   By: dmoraled <dmoraled@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/16 16:56:25 by dmoraled          #+#    #+#             */
-/*   Updated: 2024/10/09 18:27:02 by dmoraled         ###   ########.fr       */
+/*   Updated: 2024/12/03 10:53:40 by dmoraled         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,5 +78,7 @@ void	ft_lstdelone(t_list *lst, void (*del)(void *));
 void	ft_lstclear(t_list **lst, void (*del)(void*));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
+
+int		ft_printf(const char *fmt, ...);
 
 #endif
