@@ -3,7 +3,10 @@ SRC = ft_bzero.c\
 	ft_isalpha.c\
 	ft_isascii.c\
 	ft_isdigit.c\
+	ft_isspace.c\
 	ft_isprint.c\
+	ft_isnum.c\
+	ft_isint.c\
 	ft_memcmp.c\
 	ft_memcpy.c\
 	ft_memset.c\
@@ -31,6 +34,7 @@ SRC = ft_bzero.c\
 	ft_strtrim.c\
 	ft_itoa.c\
 	ft_atoi.c\
+	ft_atol.c\
 	ft_striteri.c\
 	ft_strmapi.c\
 	ft_split.c\
