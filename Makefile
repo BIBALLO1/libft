@@ -66,15 +66,16 @@ all: $(NAME)
 
 $(NAME): $(OBJ)
 	ar -rcs $(NAME) $(OBJ)
+	@echo "built $(NAME)"
 
 %.o: %.c
-	cc $(CFLAGS) -c -o $@ $<
+	cc $(CFLAGS) -c $< -o $@ 
 
 clean:
-	rm -f $(OBJ)
+	@rm -f $(OBJ)
 
 fclean: clean
-	rm -f $(NAME)
+	@rm -f $(NAME)
 
 re: fclean all
 

@@ -6,7 +6,7 @@
 /*   By: dmoraled <dmoraled@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/10 11:44:55 by dmoraled          #+#    #+#             */
-/*   Updated: 2025/01/12 15:13:46 by dmoraled         ###   ########.fr       */
+/*   Updated: 2025/01/12 16:14:25 by dmoraled         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 int	ft_isnum(const char *s)
 {
-	int	foundn;
+	int	found;
 
-	foundn = 0;
+	found = 0;
 	while (*s)
 	{
 		if (!ft_isspace(*s) && !ft_isdigit(*s) && *s != '-' && *s != '+')
@@ -24,8 +24,8 @@ int	ft_isnum(const char *s)
 		if ((*s == '-' || *s == '+') && !ft_isdigit(s[1]))
 			return (0);
 		if (ft_isdigit(*s))
-			foundn = 1;
+			found = 1;
 		++s;
 	}
-	return (foundn);
+	return (found);
 }
