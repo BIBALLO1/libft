@@ -1,31 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isnum.c                                         :+:      :+:    :+:   */
+/*   ft_strtol.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dmoraled <dmoraled@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/10 11:44:55 by dmoraled          #+#    #+#             */
-/*   Updated: 2025/01/12 15:13:46 by dmoraled         ###   ########.fr       */
+/*   Created: 2025/01/12 14:20:34 by dmoraled          #+#    #+#             */
+/*   Updated: 2025/01/12 14:29:12 by dmoraled         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isnum(const char *s)
+long	ft_strtol(const char *str, const char **endptr)
 {
-	int	foundn;
+	long	result;
 
-	foundn = 0;
-	while (*s)
-	{
-		if (!ft_isspace(*s) && !ft_isdigit(*s) && *s != '-' && *s != '+')
-			return (0);
-		if ((*s == '-' || *s == '+') && !ft_isdigit(s[1]))
-			return (0);
-		if (ft_isdigit(*s))
-			foundn = 1;
-		++s;
-	}
-	return (foundn);
+	result = ft_atol(str);
+	while (ft_isspace(*str))
+		++str;
+	if (*str == '+' || *str == '-')
+		++str;
+	while (ft_isdigit(*str))
+		++str;
+	while (ft_isspace(*str))
+		++str;
+	if (endptr)
+		*endptr = str;
+	return (result);
 }

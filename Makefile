@@ -35,6 +35,7 @@ SRC = ft_bzero.c\
 	ft_itoa.c\
 	ft_atoi.c\
 	ft_atol.c\
+	ft_strtol.c\
 	ft_striteri.c\
 	ft_strmapi.c\
 	ft_split.c\

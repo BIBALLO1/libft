@@ -6,7 +6,7 @@
 /*   By: dmoraled <dmoraled@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/16 16:56:25 by dmoraled          #+#    #+#             */
-/*   Updated: 2024/12/10 12:17:52 by dmoraled         ###   ########.fr       */
+/*   Updated: 2025/01/12 15:07:43 by dmoraled         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int		ft_isdigit(int c);
 int		ft_isalnum(int c);
 int		ft_isascii(int c);
 int		ft_isprint(int c);
-int		ft_isnum(char *s);
+int		ft_isnum(const char *s);
 int		ft_isint(long n);
 
 size_t	ft_strlen(const char *s);
@@ -48,6 +48,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len);
 
 int		ft_atoi(const char *str);
 long	ft_atol(const char *str);
+long	ft_strtol(const char *str, const char **endptr);
 
 void	*ft_calloc(size_t amount, size_t size);
 char	*ft_strdup(const char *s);
