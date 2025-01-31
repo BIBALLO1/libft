@@ -47,7 +47,7 @@ SRC = ft_bzero.c\
 	ft_lstdelone.c\
 	ft_lstclear.c\
 	ft_lstiter.c\
-	ft_lstidx.c\
+	ft_lstat.c\
 	ft_lstsorted.c\
 	ft_lstmap.c\
 	ft_printf/print_args/print_char.c\
