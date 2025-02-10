@@ -6,7 +6,7 @@
 /*   By: dmoraled <dmoraled@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/16 16:56:25 by dmoraled          #+#    #+#             */
-/*   Updated: 2025/02/03 16:16:04 by dmoraled         ###   ########.fr       */
+/*   Updated: 2025/02/10 13:12:27 by dmoraled         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,9 @@ void	*ft_memcpy(void *dest, const void *src, size_t n);
 void	*ft_memmove(void *dest, const void *src, size_t n);
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
+
+int		ft_max(int a, int b);
+int		ft_min(int a, int b);
 
 int		ft_toupper(int c);
 int		ft_tolower(int c);
@@ -84,8 +87,10 @@ void	ft_lstdelone(t_list *lst, void (*del)(void *));
 void	ft_lstclear(t_list **lst, void (*del)(void*));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
+t_list	*ft_lstfind(t_list *lst, void *payload, int (*f)(void *, void *));
 t_list	*ft_lstat(t_list *lst, unsigned int idx);
 int		ft_lstsorted(t_list *lst, int (*less)(void *, void *));
+t_list	*ft_lstmax(t_list *lst, int (*less)(void *, void *));
 
 int		ft_printf(const char *fmt, ...);
 

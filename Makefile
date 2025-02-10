@@ -7,6 +7,8 @@ SRC = ft_bzero.c\
 	ft_isprint.c\
 	ft_isnum.c\
 	ft_isint.c\
+	ft_max.c\
+	ft_min.c\
 	ft_memcmp.c\
 	ft_memcpy.c\
 	ft_memset.c\
@@ -48,9 +50,11 @@ SRC = ft_bzero.c\
 	ft_lstdelone.c\
 	ft_lstclear.c\
 	ft_lstiter.c\
+	ft_lstfind.c\
 	ft_lstat.c\
 	ft_lstsorted.c\
 	ft_lstmap.c\
+	ft_lstmax.c\
 	ft_printf/print_args/print_char.c\
 	ft_printf/print_args/print_hex.c\
 	ft_printf/print_args/print_num.c\
