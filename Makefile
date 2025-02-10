@@ -30,6 +30,7 @@ SRC = ft_bzero.c\
 	ft_calloc.c\
 	ft_strdup.c\
 	ft_strjoin.c\
+	ft_strsjoin.c\
 	ft_substr.c\
 	ft_strtrim.c\
 	ft_itoa.c\
