@@ -37,7 +37,6 @@ SRC = ft_bzero.c\
 	ft_strtrim.c\
 	ft_itoa.c\
 	ft_atoi.c\
-	ft_atol.c\
 	ft_strtol.c\
 	ft_striteri.c\
 	ft_strmapi.c\
@@ -51,8 +50,6 @@ SRC = ft_bzero.c\
 	ft_lstclear.c\
 	ft_lstiter.c\
 	ft_lstfind.c\
-	ft_lstat.c\
-	ft_lstsorted.c\
 	ft_lstmap.c\
 	ft_lstmax.c\
 	ft_printf/print_args/print_char.c\

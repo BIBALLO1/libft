@@ -6,7 +6,7 @@
 /*   By: dmoraled <dmoraled@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/16 16:56:25 by dmoraled          #+#    #+#             */
-/*   Updated: 2025/02/10 13:12:27 by dmoraled         ###   ########.fr       */
+/*   Updated: 2025/02/17 12:56:39 by dmoraled         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define LIBFT_H
 
 # include <stddef.h>
+# include <limits.h>
 # include <stdlib.h>
 
 int		ft_isalpha(int c);
@@ -23,7 +24,7 @@ int		ft_isalnum(int c);
 int		ft_isascii(int c);
 int		ft_isprint(int c);
 int		ft_isnum(const char *s);
-int		ft_isint(long n);
+int		ft_isint(const char *str);
 
 size_t	ft_strlen(const char *s);
 void	*ft_memset(void *s, int c, size_t n);
@@ -50,7 +51,6 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n);
 char	*ft_strnstr(const char *big, const char *little, size_t len);
 
 int		ft_atoi(const char *str);
-long	ft_atol(const char *str);
 long	ft_strtol(const char *str, const char **endptr);
 
 void	*ft_calloc(size_t amount, size_t size);
@@ -88,8 +88,6 @@ void	ft_lstclear(t_list **lst, void (*del)(void*));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstfind(t_list *lst, void *payload, int (*f)(void *, void *));
-t_list	*ft_lstat(t_list *lst, unsigned int idx);
-int		ft_lstsorted(t_list *lst, int (*less)(void *, void *));
 t_list	*ft_lstmax(t_list *lst, int (*less)(void *, void *));
 
 int		ft_printf(const char *fmt, ...);
