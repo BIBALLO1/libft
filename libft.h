@@ -6,12 +6,16 @@
 /*   By: dmoraled <dmoraled@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/16 16:56:25 by dmoraled          #+#    #+#             */
-/*   Updated: 2025/02/17 12:56:39 by dmoraled         ###   ########.fr       */
+/*   Updated: 2025/02/17 13:45:30 by dmoraled         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
+
+# ifndef GNL_BUFFER_SIZE
+#  define GNL_BUFFER_SIZE 16
+# endif
 
 # include <stddef.h>
 # include <limits.h>
@@ -55,6 +59,8 @@ long	ft_strtol(const char *str, const char **endptr);
 
 void	*ft_calloc(size_t amount, size_t size);
 char	*ft_strdup(const char *s);
+char	*ft_strdup_to(const char *s, char c);
+char	*ft_strdup_from(const char *s, char c);
 
 char	*ft_substr(const char *s, unsigned int start, size_t len);
 char	*ft_strjoin(const char *s1, const char *s2);
@@ -91,5 +97,7 @@ t_list	*ft_lstfind(t_list *lst, void *payload, int (*f)(void *, void *));
 t_list	*ft_lstmax(t_list *lst, int (*less)(void *, void *));
 
 int		ft_printf(const char *fmt, ...);
+
+char	*get_next_line(int fd);
 
 #endif

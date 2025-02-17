@@ -57,6 +57,7 @@ SRC = ft_bzero.c\
 	ft_printf/print_args/print_num.c\
 	ft_printf/print_args/print_str.c\
 	ft_printf/ft_printf.c\
+	get_next_line/get_next_line.c\
 
 OBJ = $(SRC:.c=.o)
 
