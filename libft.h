@@ -6,7 +6,7 @@
 /*   By: dmoraled <dmoraled@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/16 16:56:25 by dmoraled          #+#    #+#             */
-/*   Updated: 2025/02/17 13:45:30 by dmoraled         ###   ########.fr       */
+/*   Updated: 2025/02/17 17:39:36 by dmoraled         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # define LIBFT_H
 
 # ifndef GNL_BUFFER_SIZE
-#  define GNL_BUFFER_SIZE 16
+#  define GNL_BUFFER_SIZE 32
 # endif
 
 # include <stddef.h>
@@ -74,7 +74,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *));
 
 void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(const char *s, int fd);
-void	ft_putendl_fd(char *s, int fd);
+void	ft_putendl_fd(const char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 void	ft_putunbr_fd(unsigned int n, int fd);
 
