@@ -9,6 +9,7 @@ SRC = ft_bzero.c\
 	ft_isint.c\
 	ft_max.c\
 	ft_min.c\
+	ft_abs.c\
 	ft_memcmp.c\
 	ft_memcpy.c\
 	ft_memset.c\
