@@ -6,7 +6,7 @@
 /*   By: dmoraled <dmoraled@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/16 16:56:25 by dmoraled          #+#    #+#             */
-/*   Updated: 2025/02/22 12:55:55 by dmoraled         ###   ########.fr       */
+/*   Updated: 2025/02/24 17:14:11 by dmoraled         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,6 +56,7 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n);
 char	*ft_strnstr(const char *big, const char *little, size_t len);
 
 int		ft_atoi(const char *str);
+int		ft_atoi_base(const char *str, const char *base);
 long	ft_strtol(const char *str, const char **endptr);
 
 void	*ft_calloc(size_t amount, size_t size);
