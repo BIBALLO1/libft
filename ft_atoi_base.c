@@ -6,7 +6,7 @@
 /*   By: dmoraled <dmoraled@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/24 17:13:54 by dmoraled          #+#    #+#             */
-/*   Updated: 2025/02/24 17:13:55 by dmoraled         ###   ########.fr       */
+/*   Updated: 2025/02/25 11:33:42 by dmoraled         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,8 @@ int	ft_atoi_base(const char *str, const char *base)
 	while ((str[i] >= '\t' && str[i] <= '\r') || str[i] == ' ')
 		++i;
 	base_ptr = ft_strchr(base, str[i]);
-	while (base_ptr)
+	while (str[i] && base_ptr)
 	{
-		ft_printf("%c -> %i\n", *base_ptr, (int)(base_ptr - base));
 		result = (result * base_len) + (int)(base_ptr - base);
 		++i;
 		base_ptr = ft_strchr(base, str[i]);
