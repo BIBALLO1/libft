@@ -6,7 +6,7 @@
 /*   By: dmoraled <dmoraled@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/16 17:25:01 by dmoraled          #+#    #+#             */
-/*   Updated: 2024/10/09 20:42:00 by dmoraled         ###   ########.fr       */
+/*   Updated: 2025/02/28 14:11:24 by dmoraled         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,7 @@ char	**ft_split(const char *s, char c)
 	int		wd_it;
 	int		word_len;
 
-	if (!s)
+	if (!s || !(*s))
 		return (0);
 	wd_it = 0;
 	ret = (char **)malloc(sizeof(char *) * (count_words(s, c) + 1));
